@@ -1,9 +1,9 @@
-<!doctype html>
+export default `<!doctype html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>CateringLanding</title>
-  <base href="catering-landing">
+  <base href="C:/Program Files/Git/catering-landing/">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
 <link rel="stylesheet" href="styles-X4GQPHCK.css"></head>
@@ -12,3 +12,4 @@
   <app-root></app-root>
 <script src="main-Y4FR64P2.js" type="module"></script></body>
 </html>
+`;

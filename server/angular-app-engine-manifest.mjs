@@ -1,6 +1,6 @@
 
 export default {
-  basePath: 'catering-landing',
+  basePath: 'C:/Program Files/Git/catering-landing',
   supportedLocales: {
   "en-US": ""
 },
