@@ -1,0 +1,18 @@
+<div class="container">
+  <h2>Testimonios</h2>
+  
+
+  <div class="grid cols-3">
+    <div class="card t" *ngFor="let t of testimonials">
+      <div class="head">
+        <div class="avatar">★</div>
+        <div>
+          <div class="name">{{ t.name }}</div>
+          <div class="role">{{ t.role }}</div>
+        </div>
+      </div>
+      <p class="text">“{{ t.text }}”</p>
+    </div>
+  </div>
+</div>
+

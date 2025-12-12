@@ -1,0 +1,21 @@
+<div class="container">
+  <h2>Menús y especialidades</h2>
+  <p></p>
+
+  <div class="grid cols-3">
+    <div class="card pack" *ngFor="let p of packs" [class.featured]="p.featured">
+      <div class="top">
+        <h3>{{ p.name }}</h3>
+        <span class="price">{{ p.priceFrom }}</span>
+      </div>
+
+      <ul>
+        <li *ngFor="let i of p.items">{{ i }}</li>
+      </ul>
+
+      <button class="btn primary" onclick="document.getElementById('contacto')?.scrollIntoView({behavior:'smooth'})">
+        Cotizar este paquete
+      </button>
+    </div>
+  </div>
+</div>

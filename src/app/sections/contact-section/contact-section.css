@@ -1,0 +1,25 @@
+.form{
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  gap: 12px;
+}
+.field{ display:flex; flex-direction:column; gap: 6px; }
+label{ font-weight: 700; }
+input, select, textarea{
+  padding: 12px;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.05);
+  color: var(--text);
+  outline: none;
+}
+textarea{ min-height: 120px; resize: vertical; }
+small{ color: #ffb4a2; }
+
+.full{ grid-column: 1 / -1; }
+.actions{ display:flex; gap: 12px; flex-wrap: wrap; }
+
+@media (min-width: 768px){
+  .form{ grid-template-columns: 1fr 1fr; }
+}

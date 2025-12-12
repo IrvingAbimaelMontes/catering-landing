@@ -1,0 +1,23 @@
+<header class="nav">
+  <div class="container nav-inner">
+    <div class="brand" (click)="goTo('inicio')">
+      <div class="logo">🍽️</div>
+      <div>
+        <div class="title">Catering Social</div>
+        <div class="sub">Eventos • Bodas • Corporativo</div>
+      </div>
+    </div>
+
+    <button class="menu-btn" (click)="toggle()">
+      {{ open ? '✕' : '☰' }}
+    </button>
+
+    <nav class="links" [class.open]="open">
+      <button class="link" (click)="goTo('servicios')">Servicios</button>
+      <button class="link" (click)="goTo('menus')">Menús</button>
+      <button class="link" (click)="goTo('galeria')">Galería</button>
+      <button class="link" (click)="goTo('testimonios')">Testimonios</button>
+      <button class="btn primary" (click)="goTo('contacto')">Cotizar</button>
+    </nav>
+  </div>
+</header>

@@ -1,0 +1,59 @@
+<div class="container">
+  <h2>Contacto / Cotización</h2>
+  
+
+  <form class="card form" [formGroup]="form" (ngSubmit)="submit()">
+    <div class="field">
+      <label>Nombre *</label>
+      <input formControlName="nombre" placeholder="Tu nombre" />
+      <small *ngIf="invalid('nombre')">Nombre requerido (mín. 2 caracteres).</small>
+    </div>
+
+    <div class="field">
+      <label>Email *</label>
+      <input formControlName="email" placeholder="correo@ejemplo.com" />
+      <small *ngIf="invalid('email')">Email válido requerido.</small>
+    </div>
+
+    <div class="field">
+      <label>Teléfono</label>
+      <input formControlName="telefono" placeholder="Opcional" />
+    </div>
+
+    <div class="field">
+      <label>Tipo de evento *</label>
+      <select formControlName="tipoEvento">
+        <option>Boda</option>
+        <option>Cumpleaños</option>
+        <option>Corporativo</option>
+        <option>Fiesta privada</option>
+      </select>
+      <small *ngIf="invalid('tipoEvento')">Selecciona un tipo de evento.</small>
+    </div>
+
+    <div class="field">
+      <label>Fecha *</label>
+      <input type="date" formControlName="fecha" />
+      <small *ngIf="invalid('fecha')">Fecha requerida.</small>
+    </div>
+
+    <div class="field">
+      <label>Número de invitados *</label>
+      <input type="number" formControlName="invitados" />
+      <small *ngIf="invalid('invitados')">Mínimo 10 invitados.</small>
+    </div>
+
+    <div class="field full">
+      <label>Mensaje *</label>
+      <textarea formControlName="mensaje" placeholder="Cuéntanos qué necesitas..."></textarea>
+      <small *ngIf="invalid('mensaje')">Mensaje requerido (mín. 10 caracteres).</small>
+    </div>
+
+    <div class="full actions">
+      <button class="btn primary" type="submit">Enviar por WhatsApp</button>
+      <button class="btn" type="button" (click)="form.reset({ tipoEvento: 'Boda', invitados: 50 }); submitted=false;">
+        Limpiar
+      </button>
+    </div>
+  </form>
+</div>

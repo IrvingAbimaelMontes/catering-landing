@@ -1,0 +1,19 @@
+.gallery{
+  grid-template-columns: repeat(2, 1fr);
+}
+.img{
+  padding: 0;
+  overflow: hidden;
+}
+img{
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  display:block;
+}
+.hint{ font-size: 13px; }
+
+@media (min-width: 768px){
+  .gallery{ grid-template-columns: repeat(3, 1fr); }
+  img{ height: 200px; }
+}

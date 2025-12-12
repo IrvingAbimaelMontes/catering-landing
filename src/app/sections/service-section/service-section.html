@@ -1,0 +1,12 @@
+<div class="container">
+  <h2>Servicios</h2>
+  <p></p>
+
+  <div class="grid cols-3">
+    <div class="card s-card" *ngFor="let s of services">
+      <div class="icon">{{ s.icon }}</div>
+      <h3>{{ s.title }}</h3>
+      <p>{{ s.desc }}</p>
+    </div>
+  </div>
+</div>

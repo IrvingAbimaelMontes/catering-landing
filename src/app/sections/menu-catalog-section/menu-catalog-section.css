@@ -1,0 +1,19 @@
+.pack .top{
+  display:flex;
+  align-items:flex-start;
+  justify-content:space-between;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+.price{
+  font-weight: 800;
+  color: #111;
+  background: linear-gradient(90deg, var(--brand), var(--brand2));
+  padding: 6px 10px;
+  border-radius: 999px;
+}
+ul{ margin: 0 0 14px; padding-left: 16px; color: var(--muted); }
+.featured{
+  border-color: rgba(255,183,3,.55);
+  box-shadow: 0 0 0 1px rgba(255,183,3,.20);
+}

@@ -1,0 +1,26 @@
+.hero{ padding: 18px 16px; }
+.hero-card{
+  border-radius: 22px;
+  padding: 26px 18px;
+  border: 1px solid var(--border);
+  background:
+    radial-gradient(1200px 400px at 20% 0%, rgba(255,183,3,.25), transparent 60%),
+    radial-gradient(900px 400px at 80% 10%, rgba(251,133,0,.20), transparent 60%),
+    var(--card);
+}
+h1{ font-size: 34px; line-height: 1.1; margin-bottom: 10px; }
+.actions{ display:flex; gap: 12px; flex-wrap: wrap; margin-top: 14px; }
+.badges{ display:flex; gap:10px; flex-wrap:wrap; margin-top: 14px; }
+.badge{
+  font-size: 12px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(255,255,255,.05);
+  color: var(--muted);
+}
+
+@media (min-width: 768px){
+  h1{ font-size: 46px; }
+  .hero-card{ padding: 34px; }
+}
